@@ -31,6 +31,13 @@ quote.workspace = true
 syn.workspace = true
 thiserror.workspace = true
 
+[dev-dependencies]
+criterion = "0.8.2"
+
+[[bench]]
+name = "sql_entity_graph"
+harness = false
+
 [lints.clippy]
 assigning_clones = "allow" # wrong diagnosis and wrong suggestions
 too_many_arguments = "allow" # I argue with myself all the time
